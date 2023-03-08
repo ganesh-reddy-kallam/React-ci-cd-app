@@ -15,12 +15,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-      
-    - name: setup git config
-      run: |
-          git config user.name "nrkb1998"
-          git config user.email "<nrkb1998@gmail.com>"
-      
+    
     - name: Dependecies
       run: npm ci
       
