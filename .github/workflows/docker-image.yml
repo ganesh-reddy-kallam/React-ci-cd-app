@@ -18,8 +18,8 @@ jobs:
         
     - name: setup git config
       run: |
-          git config user.name "Naveen Reddy"
-          git config user.email "nrkb1998@gmail.com"
+        git config user.name "Naveen Reddy bot"
+        git config user.email "<>"
       
     
     - name: Dependecies
