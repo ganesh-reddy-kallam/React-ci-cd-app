@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Quiz2 from "./Quiz2";
 
 import "./sample4.css";
 const Course5 = () => {
@@ -111,6 +110,7 @@ const Course5 = () => {
                   <ul>
                     <div class="container">
                       <iframe
+                        title="Frame 1"
                         className="responsive-iframe"
                         src="https://www.youtube.com/embed/tgbNymZ7vqY"
                       ></iframe>
@@ -225,6 +225,7 @@ const Course5 = () => {
                 <ul>
                   <div class="container">
                     <iframe
+                      title="Frame 2"
                       className="responsive-iframe"
                       src="https://www.youtube.com/embed/tgbNymZ7vqY"
                     ></iframe>
@@ -332,6 +333,7 @@ const Course5 = () => {
                 <ul>
                   <div class="container">
                     <iframe
+                      title="Frame 3"
                       className="responsive-iframe"
                       src="https://www.youtube.com/embed/tgbNymZ7vqY"
                     ></iframe>

@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "./starting3.css";
 import data from "./products.json";
 import { Link } from "react-router-dom";
-import Course5 from "./sample4";
-import App from "./App";
+
 import image from "./food.jpg";
 
 function Card({ item }) {
-  const [showNewComponent, setShowNewComponent] = useState(false);
+  const [setShowNewComponent] = useState(false);
 
   function handleButtonClick() {
     setShowNewComponent(true);
