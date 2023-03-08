@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  color: #f1f1f1;
 }
 
 .App-logo {
@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(27, 23, 23);
 }
 
 .App-link {
@@ -35,4 +35,110 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.expandable-content {
+  max-height: 0;
+  background-color: rgba(42, 66, 32, 0.938);
+  overflow: scroll;
+  transition: max-height 0.3s ease-out;
+}
+
+.expandable-content h2 {
+  align-items: center;
+}
+
+/* expandable scroll */
+.expandable-content {
+  overflow: scroll;
+}
+
+.expandable-content::-webkit-scrollbar {
+  width: 3px;
+  height: 6px;
+}
+
+.expandable-content::-webkit-scrollbar-thumb {
+  background-color: #f0cd06;
+  border-radius: 4px;
+}
+
+.expandable-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.expandable-content::-webkit-scrollbar-button {
+  background-color: #555;
+}
+/*888*****************************************/
+.expanded {
+  max-height: 1000px; /* any large enough value to expand to full height */
+}
+
+.collapsed {
+  max-height: 0;
+}
+
+.expandable-div {
+  border: 1px solid #0e0d0d;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: background-color 0.2s ease-out;
+}
+
+.expandable-div:hover {
+  background-color: rgba(33, 39, 31, 0.938)
+}
+
+.quiz-container {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.question-container
+{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+  color: black;
+}
+.result-container {
+  background-color: white;
+  padding: 30px;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+}
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+.CloseButton{
+  background-color: red;
+}
+.SubmitQuizButton{
+  background-color: orange;
+}
+.QButtons{
+  background-color: #94b619;
+  font-weight: 700;
+  
+}
+.QuizButtonComponent{
+  display: block;
+  align-items: first baseline;
+  font-weight: 700;
 }

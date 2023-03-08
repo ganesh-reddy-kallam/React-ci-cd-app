@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Course5 from './sample4';
+import CardsContainer from './sarting2';
+import CardsContainer1 from './starting3';
+import BuyNowButton from './buynow';
+import Quiz2 from './Quiz2';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+
+          <Route path="/sample4" element={<Course5 />} />
+          <Route path="/quiz2" element={<Quiz2 />} />
+        </Routes>
+        <Course5 />
+        <CardsContainer1 />
+
+      </div>
+    </BrowserRouter>
   );
 }
 
