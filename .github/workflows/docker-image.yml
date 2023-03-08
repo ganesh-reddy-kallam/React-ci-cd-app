@@ -18,10 +18,9 @@ jobs:
         
     - name: setup git config
       run: |
-        git config user.name "NaveenReddy-Can bot"
+        git config user.name "NaveenReddy-Can"
         git config user.email "naveenreddy.can@gmail.com"
       
-    
     - name: Dependecies
       run: npm ci
       
