@@ -18,8 +18,8 @@ jobs:
         
     - name: setup git config
       run: |
-        git config user.name "NaveenReddy-Can"
-        git config user.email "naveenreddy.can@gmail.com"
+        git config user.name "ganesh-reddy-kallam"
+        git config user.email ""
       
     - name: Dependecies
       run: npm ci
